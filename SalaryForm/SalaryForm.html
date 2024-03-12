@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Form</title>
+    <link rel="stylesheet" href="SalaryForm.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Salary Calculation Form</h1>
+    <form action="">
+        <label for="basicpay">BasicPay</label>
+        <input type="text" class="form-control" id="bpay" value=""/>
+        <label for="HRA">HRA</label>
+        <input type="text" class="form-control" id="hra" value=""/>
+        <label for="DA">DA</label>
+        <input type="text" class="form-control" id="da" value=""/>
+        <label for="Travel">Travel</label>
+        <input type="text" class="form-control" id="travelling" value=""/>
+        <label for="PF">PF</label>
+        <input type="text" class="form-control" id="pf" value=""/>
+        <label for="Gross Salary">Gross Salary</label>
+        <input type="text" class="form-control" id="gsal" value=""/>
+        <label for="NET Salary">NET Salary</label>
+        <input type="text" class="form-control" id="net" value=""/>
+
+        <input type="button" value="Print"   id="btnid3">
+    </form>
+
+    <h2>Salary Report</h2>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>S.no</th>
+            <th>BasicPay</th>
+            <th>HRA</th>
+            <th>DA</th>
+            <th>Travel</th>
+            <th>PF</th>
+            <th>Gross Salary</th>
+            <th>NET Salary</th>
+        </tr>
+        </thead>
+        <tbody id="pri"></tbody>
+    </table>
+</div>
+
+<script src="SalaryForm.js"></script>
+</body>
+</html>
